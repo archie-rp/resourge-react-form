@@ -70,7 +70,6 @@ const onSubmit = handleSubmit(
 )
 ```
 
-
 ### Form Data
 
 Form data is the default form values. Can be a simple object or a class (I made it specifically for class support)
@@ -79,7 +78,6 @@ Rules:
 
 - Only constrains `Form Data` to an object. Meaning that it's possible to have elements with `moment`, `dayjs`, `class's`, `luxonas`, etc.
 - Cached on the first render (changes will not affect the form data).
-
 
 Example with plain object
 
@@ -119,7 +117,6 @@ const {
   new User()
 )
 ```
-
 
 ## watch
 

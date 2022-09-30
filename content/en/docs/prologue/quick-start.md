@@ -18,14 +18,16 @@ toc: true
 - [React](https://reactjs.com/) — ReactJS
 - [React Native](https://react-native.org/) — React Native for mobile
 
-
 ## Installation
 
 - Using Yarn
+
 ```bash
 yarn add @resourge/react-form
 ```
+
 - Using npm
+
 ```bash
 npm install @resourge/react-form --save
 ```
@@ -33,7 +35,6 @@ npm install @resourge/react-form --save
 ### Schema validation with Yup
 
 {{< alert icon="💡" text="Only needed when using Yup as schema validation" />}}
-
 
 To simplify the process of converting errors from diferent validation packages like joi, yup, zod, ajv, etc to `useForm` hook lookalike errors, use `setDefaultOnError`. You only need to setup this on the initialization of the application in this case App.tsx.
 
@@ -49,6 +50,7 @@ setDefaultOnError((errors: any) => {
   return []
 });
 ```
+
 - Note: We plan to add more default validations in the future. If you have one and want to share, please do and contribute.
 
 - For yup validation, `setFormYupValidation`
@@ -128,12 +130,9 @@ export default function Form() {
 Usage of form as wrapper is optional.
 {{< /details >}}
 
-
 ## Known Bugs
 
 - Input cursor jumping to end.<br>
 Exists a bug in react inputs where using async `onChange` will cause the input cursor to jump to the end. <a href="https://github.com/facebook/react/issues/14904">facebook/react#14904</a>.
 
 To prevent the bug from occurring, `onChange` params needs to be an Event.
-
-
