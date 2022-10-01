@@ -3,5 +3,4 @@ npm outdated [[&amp;lt;@scope&amp;gt;/]&amp;lt;pkg&amp;gt; ...] Update packages 
 npm update [&amp;lt;pkg&amp;gt;...]</description></item><item><title>Troubleshooting</title><link>https://archie-rp.github.io/resourge-react-form/docs/help/troubleshooting/</link><pubDate>Thu, 12 Nov 2020 15:22:20 +0100</pubDate><guid>https://archie-rp.github.io/resourge-react-form/docs/help/troubleshooting/</guid><description>Problems updating npm packages # Delete the ./node_modules folder, and run again:
 npm install Problems with cache # Delete the temporary directories:
 npm run clean</description></item><item><title>FAQ</title><link>https://archie-rp.github.io/resourge-react-form/docs/help/faq/</link><pubDate>Tue, 06 Oct 2020 08:49:31 +0000</pubDate><guid>https://archie-rp.github.io/resourge-react-form/docs/help/faq/</guid><description>Keyboard shortcuts for search? # focus: Ctrl + / select: ↓ and ↑ open: Enter close: Esc Can I get support? # Create a topic:
-GitHub Contact the creator? # Send josesilvaoliveira a message:
-GitHub TODO - emails here</description></item></channel></rss>
+GitHub Contact the creator? # GitHub (José Oliveira)</description></item></channel></rss>
