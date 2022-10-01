@@ -4,7 +4,7 @@
 title = "React Form"
 titleSeparator = "-"
 titleAddition = "Build forms with React Form"
-description = "React Form is a simple and basic controlled hook form. Aiming to create forms with minimal effort."
+description = "React Form is a simple and basic controlled hook form.<br>Aiming to create forms with minimal effort."
 
 ## Documentation
 # docsVersion = "0.3"
@@ -50,7 +50,7 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1270x740 Center" # normalize image size
 
 # Footer
-footer = "Powered by <a class=\"text-muted\" href=\"https://www.netlify.com/\">Netlify</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
+footer = "Powered by <a class=\"text-muted\" href=\"https://github.com/resourge//\">Resourge</a>"
 
 # Feed
 copyRight = "Copyright (c) 2020-2021 Henk Verlinde"

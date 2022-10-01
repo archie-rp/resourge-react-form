@@ -28,7 +28,4 @@ Create a topic:
 
 ## Contact the creator?
 
-Send `josesilvaoliveira` a message:
-
-- [GitHub](https://github.com/resourge/react-form/)
-- TODO - emails here
+- [GitHub (José Oliveira)](https://github.com/josesilvaoliveira)

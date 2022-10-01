@@ -70,7 +70,7 @@ const onSubmit = handleSubmit(
 )
 ```
 
-### Form Data
+## Form Data
 
 Form data is the default form values. Can be a simple object or a class (I made it specifically for class support)
 
@@ -352,3 +352,20 @@ const {
 ...
 redo()
 ```
+
+## All actions
+
+
+`useForm` returns `State` and `Actions`.
+
+All actions available on `useForm`:
+
+| Name | Type | Default | Description |
+| ---- | ---- | ------- | ----------- |
+| **form** | `object` | [`formData`](#form-data) | Form data |
+| **errors** | `{ [form path]: [path error messages] }` | undefined | Depends if `useForm` `validate` is set. (ex: { 'user.name': ['Name is required'] }) |
+| **isValid** | `boolean` | false | Form state by default is false if `errors` are undefined or an empty object |
+| **touches** | `{ [form path]: boolean }` | {} | Form touches (ex: { 'user.name': true }) |
+| **isTouched** | `boolean` | false | Form touches state by default is false if `touches` are undefined or an empty object |
+| **context** | `object` | [Form State](#form-state) | Context, mainly for use in `FormProvider` |
+| **formState** | `object` | `object` | Virtual Form Data, that provides a virtual representation of the form data to individually find errors/isTouched/isValid on each key (includes deep keys) |

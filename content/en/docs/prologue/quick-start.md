@@ -32,41 +32,7 @@ yarn add @resourge/react-form
 npm install @resourge/react-form --save
 ```
 
-### Schema validation with Yup
-
-{{< alert icon="💡" text="Only needed when using Yup as schema validation" />}}
-
-To simplify the process of converting errors from diferent validation packages like joi, yup, zod, ajv, etc to `useForm` hook lookalike errors, use `setDefaultOnError`. You only need to setup this on the initialization of the application in this case App.tsx.
-
-`setDefaultOnError` will, by default (unless `onError` from Form Options is set), customize the errors to fit `useForm` errors
-
-```javascript
-// In App.tsx
-import { setDefaultOnError } from '@resourge/react-form'
-
-setDefaultOnError((errors: any) => {
-  // Customize errors to fit the model 
-  // [{ path, errors }]
-  return []
-});
-```
-
-- Note: We plan to add more default validations in the future. If you have one and want to share, please do and contribute.
-
-- For yup validation, `setFormYupValidation`
-
-```javascript
-// In App.tsx
-import { setDefaultOnError } from '@resourge/react-form'
-
-setDefaultOnError((errors: any) => {
-  // Customize errors to fit the model 
-  // [{ path, errors }]
-  return []
-});
-```
-
-#### Usage
+## Usage
 
 ```javascript
 const {
@@ -86,7 +52,7 @@ const {
 
 `useForm` is the hook necessary to create forms. Using formData and formOptions, the hook returns an array containing the form state and the form actions.
 
-#### Example
+### Example
 
 Demonstration of a example of a simple form.
 
@@ -132,7 +98,5 @@ Usage of form as wrapper is optional.
 
 ## Known Bugs
 
-- Input cursor jumping to end.<br>
-Exists a bug in react inputs where using async `onChange` will cause the input cursor to jump to the end. <a href="https://github.com/facebook/react/issues/14904">facebook/react#14904</a>.
+- Let's us know if any <a href="https://github.com/resourge/react-form/issues">here</a>.
 
-To prevent the bug from occurring, `onChange` params needs to be an Event.
