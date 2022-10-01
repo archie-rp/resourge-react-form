@@ -99,4 +99,3 @@ Usage of form as wrapper is optional.
 ## Known Bugs
 
 - Let's us know if any <a href="https://github.com/resourge/react-form/issues">here</a>.
-

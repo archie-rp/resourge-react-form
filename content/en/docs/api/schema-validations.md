@@ -59,16 +59,16 @@ type UserType = {
 }
 
 export class UserModel {
-	public name = ''
-	public age = 18
-	public email = ''
-	public createdAt?: Date
+ public name = ''
+ public age = 18
+ public email = ''
+ public createdAt?: Date
 
-	constructor(model?: UserType) {
-		if (model) {
-			this.name = model.name
-			this.age = model.age
-			this.email = model.email
+ constructor(model?: UserType) {
+  if (model) {
+   this.name = model.name
+   this.age = model.age
+   this.email = model.email
       if(model.createdAt) {
         this.createdAt = new Date(model.createdAt)
       }
@@ -98,44 +98,44 @@ You can get it in here <a href="https://github.com/resourge/schema/">Resource Sc
 
 ```javascript
 export type UserType = {
-	name: string
-	age: number
-	location: LocationType
-	hobbies: Array<keyof typeof HobbiesEnum>
+ name: string
+ age: number
+ location: LocationType
+ hobbies: Array<keyof typeof HobbiesEnum>
 }
 
 export class UserModel {
-	public name = ''
-	public age = 16
-	public location: LocationType = { address: '', city: '', postalCode: '', phoneNumber: '' }
-	public hobbies: Array<keyof typeof HobbiesEnum> = []
+ public name = ''
+ public age = 16
+ public location: LocationType = { address: '', city: '', postalCode: '', phoneNumber: '' }
+ public hobbies: Array<keyof typeof HobbiesEnum> = []
 
-	constructor(model?: UserType) {
-		if (model) {
-			this.name = model.name
-			this.age = model.age
-			this.location = model.location
-		}
-	}
+ constructor(model?: UserType) {
+  if (model) {
+   this.name = model.name
+   this.age = model.age
+   this.location = model.location
+  }
+ }
 }
 
 const schema = object<UserModel>({
-	name: string().min(10).required(),
-	age: number().min(16).required(),
-	location: object({
-		city: string().required(),
-		address: string().required(),
-		postalCode: string().postalCode(PostalCodes.PT).required(),
-		phoneNumber: string().phoneNumber(PhoneNumbers.am_AM).required()
-	})
+ name: string().min(10).required(),
+ age: number().min(16).required(),
+ location: object({
+  city: string().required(),
+  address: string().required(),
+  postalCode: string().postalCode(PostalCodes.PT).required(),
+  phoneNumber: string().phoneNumber(PhoneNumbers.am_AM).required()
+ })
 }).compile();
 
 export const useUserModel = (model?: UserType) => {
-	return useForm<UserModel>(new UserModel(model), {
-		validate: (form: UserModel, changedKeys) => {
-			return schema.validate(form, changedKeys)
-		},
-	})
+ return useForm<UserModel>(new UserModel(model), {
+  validate: (form: UserModel, changedKeys) => {
+   return schema.validate(form, changedKeys)
+  },
+ })
 }
 ```
 

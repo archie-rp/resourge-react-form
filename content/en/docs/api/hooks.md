@@ -36,13 +36,13 @@ export default function LoginForm() {
 
 Options we can use on `useForm`:
 
-|  Name 	|  Type 	|  Required 	|   Description	|
-|---	|---	|---	|---	|
-|  **validateDefault** 	|  `boolean` 	|  false 	|  Set's global validation. False by default 	|
-|  **validate**	|  `(form: T) =>  Promise<void>` 	|  false 	|  Method to validate form. Usually with some kind of validator. (like yup, zod, joi, etc) 	|
-|  **isValid** 	|  `({ form, isValid, errors }) => boolean` 	|  false 	|  Method to define if form is valid 	|
-|  **onErrors** 	|  `(errors: any[]) => FormErrors` 	|  false 	|   Local method to treat errors.	|
-|  **onTouch** 	|  `(key: FormKey<T>, value: unknown, previousValue: unknown) => void`	|  false 	|  Method called every time a value is changed 	|
+|  Name  |  Type  |  Required  |   Description |
+|--- |--- |--- |--- |
+|  **validateDefault**  |  `boolean`  |  false  |  Set's global validation. False by default  |
+|  **validate** |  `(form: T) =>  Promise<void>`  |  false  |  Method to validate form. Usually with some kind of validator. (like yup, zod, joi, etc)  |
+|  **isValid**  |  `({ form, isValid, errors }) => boolean`  |  false  |  Method to define if form is valid  |
+|  **onErrors**  |  `(errors: any[]) => FormErrors`  |  false  |   Local method to treat errors. |
+|  **onTouch**  |  `(key: FormKey<T>, value: unknown, previousValue: unknown) => void` |  false  |  Method called every time a value is changed  |
 
 ## useFormField
 

@@ -355,7 +355,6 @@ redo()
 
 ## All actions
 
-
 `useForm` returns `State` and `Actions`.
 
 All actions available on `useForm`:
