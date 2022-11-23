@@ -1,20 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Prologue on</title><link>https://archie-rp.github.io/resourge-react-form/docs/prologue/</link><description>Recent content in Prologue on</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 06 Oct 2020 08:48:45 +0000</lastBuildDate><atom:link href="https://archie-rp.github.io/resourge-react-form/docs/prologue/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction</title><link>https://archie-rp.github.io/resourge-react-form/docs/prologue/introduction/</link><pubDate>Tue, 06 Oct 2020 08:48:57 +0000</pubDate><guid>https://archie-rp.github.io/resourge-react-form/docs/prologue/introduction/</guid><description>Quick Start #
-One page summary of how to start a creating form with react form. Quick Start →
-Help #
-How to verify if has a new version. Help →</description></item><item><title>Quick Start</title><link>https://archie-rp.github.io/resourge-react-form/docs/prologue/quick-start/</link><pubDate>Mon, 16 Nov 2020 13:59:39 +0100</pubDate><guid>https://archie-rp.github.io/resourge-react-form/docs/prologue/quick-start/</guid><description>Compatible #
-React — ReactJS React Native — React Native for mobile Installation #
-Using Yarn yarn add @resourge/react-form
-Using npm npm install @resourge/react-form --save
-Usage #
-const {
-form, // Form Data
-touches, isTouched, // Form touches
-errors, isValid, // Form validation
-context, // Context
-triggerChange, reset, merge,
-handleSubmit, field,
-onChange, getValue, changeValue,changeValue, resetTouch,
-getErrors, setError, hasError, watch,
-undo, redo
-} = useForm(formData, formOptions)
-useForm is the hook necessary to create forms.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Prologue on</title><link>https://archie-rp.github.io/resourge-react-form/docs/prologue/</link><description>Recent content in Prologue on</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 06 Oct 2020 08:48:45 +0000</lastBuildDate><atom:link href="https://archie-rp.github.io/resourge-react-form/docs/prologue/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction</title><link>https://archie-rp.github.io/resourge-react-form/docs/prologue/introduction/</link><pubDate>Tue, 06 Oct 2020 08:48:57 +0000</pubDate><guid>https://archie-rp.github.io/resourge-react-form/docs/prologue/introduction/</guid><description>Quick Start # One page summary of how to start a creating form with react form. Quick Start →
+Help # How to verify if has a new version. Help →</description></item><item><title>Quick Start</title><link>https://archie-rp.github.io/resourge-react-form/docs/prologue/quick-start/</link><pubDate>Mon, 16 Nov 2020 13:59:39 +0100</pubDate><guid>https://archie-rp.github.io/resourge-react-form/docs/prologue/quick-start/</guid><description>Compatible # React — ReactJS React Native — React Native for mobile Installation # Using Yarn yarn add @resourge/react-form Using npm npm install @resourge/react-form --save Usage # const { form, // Form Data touches, isTouched, // Form touches errors, isValid, // Form validation context, // Context triggerChange, reset, merge, handleSubmit, field, onChange, getValue, changeValue,changeValue, resetTouch, getErrors, setError, hasError, watch, undo, redo } = useForm(formData, formOptions) useForm is the hook necessary to create forms.</description></item></channel></rss>
